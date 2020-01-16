@@ -1,3 +1,39 @@
+function right () {
+    reaperright.setImage(img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . f f f f f . . . . . . . . . . . 
+. . . . . . . . . . . . . . . f c c c c c f . . . . . . . . . . 
+. . . . . . . . . . . . . . f f c c f f f c f . . . . . . . . . 
+. . . . . . . . . . . . . f . . f c f f f c f . . . . . . . . . 
+. . . . . . . . . . . . f f f f c c c c c f . f . . . . . . . . 
+. . . . . . . . . . f f c c f c f f c c c f f f . . . . . . . . 
+. . . f . . . . . . . f c c c f c c f f f f f c f f . . . . . . 
+. . . f . . . . . . . f c c c f f c c c c c f c f . . . . . . . 
+. . . f f . . . . f f f f f f c c f c c c f f c f . . . . . . . 
+. . . . f f . . f c c f b f f c 2 c f f f c f f . . . . . . . . 
+. . . . . f f f c c c c f . f f 2 2 c c 2 f b f f . . . . . . . 
+. . . . . f f f f f c c c f f b f f f f f f f c c f . . . . . . 
+. . . . . . f b b b f c c f c f f f f f . f c c c c f . . . . . 
+. . . . . . f b b b b f f f f c c c c f f . f c c c f . . . . . 
+. . . . . . . f f b b f c f b f c c f b f f f f f f f . . . . . 
+. . . . . . . . . f f f f c f f f f f f c c f b b b f . . . . . 
+. . . . . . . . . f c c f f f f . . f c c c f b b f . . . . . . 
+. . . . . . . . f f f c c c f f f f f f c c c f f . . . . . . . 
+. . . . . . . f c c c f c c f . . . f c c c c f . . . . . . . . 
+. . . . . . f c c c c c f f . . . . f f f f f c f . . . . . . . 
+. . . . . . f f f f f f f f . . . . f f f f f f f . . . . . . . 
+`)
+}
 function bg () {
     scene.setBackgroundImage(img`
 d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
@@ -122,8 +158,82 @@ d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d 
 `)
 }
+function rslash () {
+    animation.runImageAnimation(
+    reaperright,
+    [img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . . . . . . . 
+. . . . . . . . . . . . . . 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . 1 1 1 1 1 . . . . 
+. . . . . . . . . f . . . . . . f f f f f . . . . . . 1 1 . . . 
+. . . . . . . . f . . . . . . f c c c c c f . . . . . . 1 1 . . 
+. . . . . . . f f . . . . . f f c c f f f c f . . . . . 1 1 . . 
+. . . . . . . f . . . . . f . . f c f f f c f . . . . . . 1 1 . 
+. . . . . . f . . . . . f f f f c c c c c f . f . . . . . 1 1 . 
+. . . . . f f f f f f f c c f c f f c c c f f f . . . . . 1 1 1 
+. . . . f f c c c f . f c c c f c c f f f f f c f f . . . 1 1 1 
+. . . f b b f c c f f f c c c f f c c c c c f c f . . . 1 1 1 1 
+. . . f b b b f c f . f f f f c c f c c c f f c f . . . 1 1 1 1 
+. . . f f b b f f . . . . f f c c c f f f c f f . . . 1 1 1 1 1 
+. . . f f f f . . . . . . . f f c c c c c f . . . 1 1 1 1 1 1 . 
+. . . f . . . . . . . . . f f b f f f f f 1 1 1 1 1 1 1 1 1 1 . 
+. . f f . . . . . . . . 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . 
+. . f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . 
+. . f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . 
+. . f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . . . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 . . . . . . . . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 c c f . . . . . . . . . 
+. f 1 1 1 1 1 1 1 1 1 1 1 1 . . . f f f f f c f . . . . . . . . 
+. . . . . f f f f f f f f . . . . f f f f f f f . . . . . . . . 
+`,img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . f . . . . . . f f f f f . . . . . . . . . . . 
+. . . . . . . . f . . . . . . f c c c c c f . . . . . . . . . . 
+. . . . . . . f f . . . . . f f c c f f f c f . . . . . . . . . 
+. . . . . . . f . . . . . f . . f c f f f c f . . . . . . . . . 
+. . . . . . f . . . . . f f f f c c c c c f . f . . . . . . . . 
+. . . . . f f f f f f f c c f c f f c c c f f f . . . . . . . . 
+. . . . f f c c c f . f c c c f c c f f f f f c f f . . . . . . 
+. . . f b b f c c f f f c c c f f c c c c c f c f . . . . . . . 
+. . . f b b b f c f . f f f f c c f c c c f f c f . . . . . . . 
+. . . f f b b f f . . . . f f c c c f f f c f f . . . . . . . . 
+. . . f f f f . . . . . . . f f c c c c c f . . . . . . . . . . 
+. . . f . . . . . . . . . f f b f f f f f c f . . . . . . . . . 
+. . f f . . . . . . . . f c f f f f f c c c c f . . . . . . . . 
+. . f . . . . . . . . f f f c c c c f f c c f f . . . . . . . . 
+. . f . . . . . . . f c f b f c c f b f f f b b f . . . . . . . 
+. . f . . . . . . f c c c f f f f f f c c f b b f . . . . . . . 
+. f . . . . . . f c c c c c f . . f c c c f b f . . . . . . . . 
+. f . . . . . f f f c c c f . . . f c c c c f . . . . . . . . . 
+. f . . . . f c c c f c c f . . . f c c c c f . . . . . . . . . 
+. f . . . f c c c c c f f . . . . f f f f f c f . . . . . . . . 
+. . . . . f f f f f f f f . . . . f f f f f f f . . . . . . . . 
+`],
+    50,
+    false
+    )
+}
 function hero () {
-    reaper = sprites.create(img`
+    reaperright = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -157,9 +267,7 @@ function hero () {
 . . . . . . f c c c c c f f . . . . f f f f f c f . . . . . . . 
 . . . . . . f f f f f f f f . . . . f f f f f f f . . . . . . . 
 `, SpriteKind.Player)
-}
-controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
-    reaper.setImage(img`
+    reaperleft = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -192,46 +300,8 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . . . . . f c f f c f . . . f c c f c c c f . . . . . . 
 . . . . . . . . f c f f f f f f . . . f f c c c c c f . . . . . 
 . . . . . . . . f f f f f f f . . . . f f f f f f f f . . . . . 
-`)
-})
-controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
-    reaper.setImage(img`
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . f f f f f . . . . . . . . . . . 
-. . . . . . . . . . . . . . . f c c c c c f . . . . . . . . . . 
-. . . . . . . . . . . . . . f f c c f f f c f . . . . . . . . . 
-. . . . . . . . . . . . . f . . f c f f f c f . . . . . . . . . 
-. . . . . . . . . . . . f f f f c c c c c f . f . . . . . . . . 
-. . . . . . . . . . f f c c f c f f c c c f f f . . . . . . . . 
-. . . f . . . . . . . f c c c f c c f f f f f c f f . . . . . . 
-. . . f . . . . . . . f c c c f f c c c c c f c f . . . . . . . 
-. . . f f . . . . f f f f f f c c f c c c f f c f . . . . . . . 
-. . . . f f . . f c c f b f f c 2 c f f f c f f . . . . . . . . 
-. . . . . f f f c c c c f . f f 2 2 c c 2 f b f f . . . . . . . 
-. . . . . f f f f f c c c f f b f f f f f f f c c f . . . . . . 
-. . . . . . f b b b f c c f c f f f f f . f c c c c f . . . . . 
-. . . . . . f b b b b f f f f c c c c f f . f c c c f . . . . . 
-. . . . . . . f f b b f c f b f c c f b f f f f f f f . . . . . 
-. . . . . . . . . f f f f c f f f f f f c c f b b b f . . . . . 
-. . . . . . . . . f c c f f f f . . f c c c f b b f . . . . . . 
-. . . . . . . . f f f c c c f f f f f f c c c f f . . . . . . . 
-. . . . . . . f c c c f c c f . . . f c c c c f . . . . . . . . 
-. . . . . . f c c c c c f f . . . . f f f f f c f . . . . . . . 
-. . . . . . f f f f f f f f . . . . f f f f f f f . . . . . . . 
-`)
-})
-controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-    reaper.setImage(img`
+`, SpriteKind.Player)
+    reaperup = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -264,8 +334,24 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . . . . . . f c c c f c c f f f f c c f . . . . . . . . 
 . . . . . . . . . f c c c c c f f f f c c c c c f . . . . . . . 
 . . . . . . . . . f f f f f f f f f f f f f f f f . . . . . . . 
-`)
+`, SpriteKind.Player)
+    reaperleft.setPosition(-6, 200)
+    reaperup.setPosition(-6, 200)
+}
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+	
 })
-let reaper: Sprite = null
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    rslash()
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    right()
+})
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
+let reaperup: Sprite = null
+let reaperleft: Sprite = null
+let reaperright: Sprite = null
 bg()
 hero()
