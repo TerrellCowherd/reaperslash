@@ -231,7 +231,40 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 `)
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
-	
+    reaper.setImage(img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . f f f f f . . . . . . . . . . . . 
+. . . . . . . . . . . . . . f f c f f f f . . . . . . . . . . . 
+. . . . . . . . . . . . . . f c c f f f c f . . . . . . . . . . 
+. . . . . . . . . . . . f f f f c c c c c f . . . . . . . . . . 
+. . . . . . . . . . . f f f f c c c c c f . f . . . . . . . . . 
+. . . . . . . . . f f c c f c f f c c c f f f . . . . . . . . . 
+. . . . . . . . . . f c c c f c c f f f f f c f f . . . . . . . 
+. . . . . . . . . . f c c c f f c c c c c f c f . . . . . . . . 
+. . . . . . . . . . . f f f b b f f c c f f c f . . . . . . . . 
+. . . . . . . f f . . . . f b f c c f f c f f . . . . . . . . . 
+. . . . . . . . . f f f . . f c c c c f f b f . . . . . . . . . 
+. . . . . . . . . . f f f f f c c c f f c f f . . . . . . . . . 
+. . . . . . . . . . . . . f f f f f b b f c f . . . . . . . . . 
+. . . . . . . . . . . . . . f f f b b b f c f . . . . . . . . . 
+. . . . . . . . . . . . . . f f c f b b f f f . . . . . . . . . 
+. . . . . . . . . . . . . . f b f c f f f f f . . . . . . . . . 
+. . . . . . . . . . . . . f c f f f f f f f f f . . . . . . . . 
+. . . . . . . . . . . . . f c c f f f c c f . f f . . . . . . . 
+. . . . . . . . . . . . f c c c f f c c c f . . f . . . . . . . 
+. . . . . . . . . . . . f c c c c f c c c c f . f f . . . . . . 
+. . . . . . . . . . . f f f c c c f c c c f f . . f . . . . . . 
+. . . . . . . . . . f c c c f c c f f f f c c f . . . . . . . . 
+. . . . . . . . . f c c c c c f f f f c c c c c f . . . . . . . 
+. . . . . . . . . f f f f f f f f f f f f f f f f . . . . . . . 
+`)
 })
 let reaper: Sprite = null
 bg()
